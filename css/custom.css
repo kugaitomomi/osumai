@@ -1,0 +1,32 @@
+.border-success {
+  border-color: #198754 !important;
+}
+
+.border-bottom {
+  border-bottom-width: 2px !important;
+}
+
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-primary {
+  background-color: #5584ac !important;
+  border-color: #5584ac !important;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(63, 61, 61, 0.67);
+          box-shadow: 0 0.125rem 0.25rem rgba(63, 61, 61, 0.67);
+}
+
+.title-color {
+  background-color: #f6f2d4;
+}
+
+.mb-4_5 {
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+/*# sourceMappingURL=custom.css.map */
