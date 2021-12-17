@@ -1,0 +1,13 @@
+$green : #198754;
+$border-weight: 2px;
+.border-success {
+  border-color: $green!important;
+}
+
+.border-bottom {
+    border-bottom-width: $border-weight!important;
+}
+
+
+
+
