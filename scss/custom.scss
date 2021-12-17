@@ -1,13 +1,21 @@
 $green : #198754;
 $border-weight: 2px;
+$ps-0: 0;
+$input-btn-color: #5584ac;
 .border-success {
   border-color: $green!important;
 }
-
 .border-bottom {
     border-bottom-width: $border-weight!important;
 }
 
-
-
-
+.row>* {
+    padding-right: $ps-0;
+    padding-left:$ps-0;
+}
+.btn-primary {
+    background-color: $input-btn-color!important;
+    border-color: $input-btn-color!important;
+    box-shadow: 2px 2px 6px 0px rgba(63,61,61,0.67);
+    // width: 133px;
+}

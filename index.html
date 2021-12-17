@@ -6,30 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Sample</title>
     <!-- BootstrapのCSS読み込み -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_module/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="node_module/bootstarp/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <header><h1><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1></header>
-    <div class="main">
-      <h2>ログイン</h2>
-      <p>メールアドレスとパスワードを入力してログインしてください</p>
-      <div>
-        <label for="">メールアドレス</label>
-        <input type="text" placeholder="abcd@creo.com">
+    <header class="d-flex flex-wrap py-3 border-bottom border-success">
+      <div class="container">
+        <h1><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      </div>
+    </header>
+    <div class="container top">
+
+      <h2 class="h2 fw-bold text-center mt-5 mb-3">ログイン</h2>
+      <p class="text-center mb-3">メールアドレスとパスワードを入力してログインしてください</p>
+      <div class="formArea ms-auto me-auto">
+      <div class="row row-cols-2 mb-3">
+        <label for="mailBox" class="mb-2">メールアドレス</label>
+        <input type="text" id="mailBox" class="form-control ps-1 pe-1" placeholder="abcd@creo.com">
+      </div>
+      <div class=" row row-cols-2 mb-3">
+        <label for="passWordArea" class="mb-2">パスワード</label>
+        <input type="text" id="passWordArea" class="form-control ps-1 pe-1" placeholder="Password">
       </div>
       <div>
-        <label for="">パスワード</label>
-        <input type="text" placeholder="Password">
+        <label for="loginCheck"><input type="checkbox" id="loginCheck" class="me-2">ログイン状態を保存する</label>
       </div>
-      <div>
-        <label for=""><input type="checkbox">ログイン状態を保存する</label>
+      <div class="text-center">
+      <input type="button" class="btn btn-primary mb-3 mt-3 ps-4 pe-4" value="ログイン">
       </div>
-      <input type="button" placeholder="ログイン">
-      <p>パスワードを忘れた方は<a href="#">こちら</a></p>
+      <p class="text-center">パスワードを忘れた方は<a href="#">こちら</a></p>
+      </div>
     </div>
     
   </body>
