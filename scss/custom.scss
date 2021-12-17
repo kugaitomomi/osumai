@@ -33,3 +33,13 @@ $title-color: #f6f2d4;
 .mb-6 {
   margin-bottom: 6rem;
 }
+.mainNav .border-end {
+  border-right-color: $green!important;
+}
+a {
+  color: #232323;
+  text-decoration: none;
+}
+a:hover {
+  color: #22577e;
+}
