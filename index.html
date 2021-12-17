@@ -7,8 +7,10 @@
     <title>Bootstrap Sample</title>
     <!-- BootstrapのCSS読み込み -->
     <link href="node_module/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrapカスタム用CSS読み込み -->
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    
     <!-- jQuery読み込み -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
@@ -16,31 +18,38 @@
   </head>
   <body>
     <header class="d-flex flex-wrap py-3 border-bottom border-success">
-      <div class="container">
-        <h1><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      <div class="container d-flex">
+        <h1 class="col"><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+        <ul class="subNav d-flex align-items-center">
+          <li class="col me-4"><a href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+          <li class="col"><a href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+        </ul>
       </div>
     </header>
     <div class="container top">
-
-      <h2 class="h2 fw-bold text-center mt-5 mb-3">ログイン</h2>
-      <p class="text-center mb-3">メールアドレスとパスワードを入力してログインしてください</p>
-      <div class="formArea ms-auto me-auto">
-      <div class="row row-cols-2 mb-3">
-        <label for="mailBox" class="mb-2">メールアドレス</label>
-        <input type="text" id="mailBox" class="form-control ps-1 pe-1" placeholder="abcd@creo.com">
+      <div class="mb-6">
+        <h2 class="h2-s fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color">給湯器</h2>
+        <ul class="d-flex ms-5">
+          <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を個別登録する</a></li>
+          <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を一括登録する</a></li>
+          <li><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">編集/削除</a></li>
+        </ul>
       </div>
-      <div class=" row row-cols-2 mb-3">
-        <label for="passWordArea" class="mb-2">パスワード</label>
-        <input type="text" id="passWordArea" class="form-control ps-1 pe-1" placeholder="Password">
+      <div class="mb-6">
+        <h2 class="h2-s fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color">エアコン</h2>
+        <ul class="d-flex ms-5">
+          <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を個別登録する</a></li>
+          <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を一括登録する</a></li>
+          <li><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">編集/削除</a></li>
+        </ul>
       </div>
-      <div>
-        <label for="loginCheck"><input type="checkbox" id="loginCheck" class="me-2">ログイン状態を保存する</label>
-      </div>
-      <div class="text-center">
-      <input type="button" class="btn btn-primary mb-3 mt-3 ps-4 pe-4" value="ログイン">
-      </div>
-      <p class="text-center">パスワードを忘れた方は<a href="#">こちら</a></p>
-      </div>
+            <div>
+              <h2 class="h2-s fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color">アカウント情報</h2>
+              <ul class="d-flex ms-5">
+                <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">新規登録</a></li>
+                <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">情報を確認する</a></li>
+              </ul>
+            </div>
     </div>
     
   </body>
