@@ -2,6 +2,10 @@
   border-color: #198754 !important;
 }
 
+.bg-success {
+  background-color: #53adac !important;
+}
+
 .border-bottom {
   border-bottom-width: 2px !important;
 }
@@ -28,5 +32,18 @@
 
 .mb-6 {
   margin-bottom: 6rem;
+}
+
+.navbar .border-end {
+  border-right-color: #198754 !important;
+}
+
+a, .nav-link {
+  color: #232323;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #22577e;
 }
 /*# sourceMappingURL=custom.css.map */

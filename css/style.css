@@ -6,15 +6,15 @@ ul {
   margin: 0;
   padding: 0;
 }
-.btn {
+.btn,.subNav li a:hover {
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
     transition: all  0.6s ease;
 }
-.btn:hover,.subNav:hover {
+.btn:hover,.subNav li a:hover {
   opacity: 0.6;
 }
-.h2-s {
-      font-size: 1.5rem;
+.searchArea .border-bottom {
+  border-bottom-width: 1px !important;
 }

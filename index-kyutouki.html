@@ -11,7 +11,6 @@
   <!-- Bootstrapカスタム用CSS読み込み -->
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
   <!-- jQuery読み込み -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- BootstrapのJS読み込み -->
@@ -24,45 +23,196 @@
       <h1 class="col"><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
       <ul class="subNav d-flex align-items-center">
         <li class="me-4"><a class="d-block" href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
-        <li class=""><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+        <li><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
       </ul>
     </div>
   </header>
-  <ul class="mainNav container d-flex mt-4 mb-4">
-    <li class="me-2 border-end"><a class="d-block pe-2" href="#">ホーム</a></li>
-    <li class="me-2 border-end"><a class="d-block pe-2" href="#">給湯器</a></li>
-    <li class="me-2 border-end"><a class="d-block pe-2" href="#">エアコン</a></li>
+<nav class="navbar navbar-expand-lg container ">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item border-end">
+  <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+</li>
+<li class="nav-item dropdown border-end">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+    aria-expanded="false">
+  給湯器
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+    <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+    <li><a class="dropdown-item" href="#">編集/削除</a></li>
   </ul>
-  <div class="container top">
-    <p class="mt-5 text-center">キーワードによる検索を行いたい方は「フリーワード検索」。<br>
-    条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
-    検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。
-</p>
-    <div class="mb-6">
-      <h2 class="fs-4 fw-bold text-center mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color">給湯器の編集/削除 </h2>
-      <ul class="d-flex ms-5">
-        <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を個別登録する</a></li>
-        <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を一括登録する</a></li>
-        <li><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">編集/削除</a></li>
-      </ul>
-    </div>
-    <div class="mb-6">
-      <h2 class="h2-s fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color">エアコン</h2>
-      <ul class="d-flex ms-5">
-        <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を個別登録する</a></li>
-        <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">商品を一括登録する</a></li>
-        <li><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">編集/削除</a></li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="h2-s fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color">アカウント情報</h2>
-      <ul class="d-flex ms-5">
-        <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">新規登録</a></li>
-        <li class="me-4"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">情報を確認する</a></li>
-      </ul>
-    </div>
-  </div>
+</li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+    aria-expanded="false">
+  エアコン
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+    <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+    <li><a class="dropdown-item" href="#">編集/削除</a></li>
+  </ul>
+</li>
+</nav>
 
+  <div class="container mb-5">
+    <p class="mt-5 text-center">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
+      検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。 </p>
+    <p class="text-end"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">新規登録(個別)</a></p>
+    <div class="d-flex searchArea justify-content-center mb-4">
+      <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">フリーワード検索
+      </div>
+      <div class="border-bottom border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input
+          class="form-control" type="text" placeholder="キーワードを入力してください" aria-label="default input example"></div>
+    </div>
+    <p class="fs-5 fw-bold text-center mb-4">または絞り込み検索</p>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success d-flex align-items-center  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        メーカー</div>
+      <div class=" border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center ">
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1"> <label class="form-check-label" for="flexRadioDefault1">リンナイ</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">ノーリツ</label> </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3"> <label class="form-check-label" for="flexRadioDefault3">パーパス</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4"> <label class="form-check-label" for="flexRadioDefault4">パロマ</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        給湯器の種別</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1-kinds"> <label class="form-check-label" for="flexRadioDefault1-kinds">ガス給湯器</label> </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2-kinds"> <label class="form-check-label" for="flexRadioDefault2-kinds">ガス給湯専用機</label> </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3-kinds"> <label class="form-check-label" for="flexRadioDefault3-kinds">ガス給湯暖房用熱源機</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4-kinds"> <label class="form-check-label" for="flexRadioDefault4-kinds">高温水供給型給湯器</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault5-kinds"> <label class="form-check-label" for="flexRadioDefault5-kinds">バランス釜</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault6-kinds"> <label class="form-check-label" for="flexRadioDefault6-kinds">瞬間湯沸かし器</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        設置場所</div>
+      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1-place"> <label class="form-check-label" for="flexRadioDefault1-place">屋外設置</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2-place"> <label class="form-check-label" for="flexRadioDefault2-place">屋内設置</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3-place"> <label class="form-check-label" for="flexRadioDefault3-place">PS扉内設置</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4-place"> <label class="form-check-label" for="flexRadioDefault4-place">PS標準設置</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault5-place"> <label class="form-check-label" for="flexRadioDefault5-place">室内設置</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault6-place"> <label class="form-check-label" for="flexRadioDefault6-place">屋外据置</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault7-place"> <label class="form-check-label" for="flexRadioDefault7-place">屋内据置</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault8-place"> <label class="form-check-label" for="flexRadioDefault8-place">壁貫通設置</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault9-place"> <label class="form-check-label" for="flexRadioDefault9-place">浴槽隣接設置</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault10-place"> <label class="form-check-label" for="flexRadioDefault10-place">チャンバー設置</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault11-place"> <label class="form-check-label" for="flexRadioDefault11-place">壁埋込型</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        ガスの種類</div>
+      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1-gas"> <label class="form-check-label" for="flexRadioDefault1-gas">都市ガス</label> </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2-gas"> <label class="form-check-label" for="flexRadioDefault2-gas">LPG</label> </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3-gas"> <label class="form-check-label" for="flexRadioDefault3-gas">共通</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        排気タイプ</div>
+      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1-exhaust"> <label class="form-check-label" for="flexRadioDefault1-exhaust">前排気【前排気延長型】</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2-exhaust"> <label class="form-check-label" for="flexRadioDefault2-exhaust">アルコーブ設置型</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3-exhaust"> <label class="form-check-label" for="flexRadioDefault3-exhaust">上方排気【上方延長排気】</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4-exhaust"> <label class="form-check-label" for="flexRadioDefault4-exhaust">後方排気【後方延長排気】</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault5-exhaust"> <label class="form-check-label" for="flexRadioDefault5-exhaust">室内設置</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault6-exhaust"> <label class="form-check-label" for="flexRadioDefault6-exhaust">給排気延長型</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault7-exhaust"> <label class="form-check-label" for="flexRadioDefault7-exhaust">丸排気型【延長丸排気】</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault8-exhaust"> <label class="form-check-label" for="flexRadioDefault8-exhaust">排気フード</label> </div>
+        <div class="form-check col-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault9-exhaust"> <label class="form-check-label" for="flexRadioDefault9-exhaust">室内開放</label> </div>
+        <div class="form-check col-4"> <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10-exhaust"> 
+          <label class="form-check-label" for="flexRadioDefault10-exhaust">屋外排気</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        号数</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1-num"> <label class="form-check-label" for="flexRadioDefault1-num">5号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2-num"> <label class="form-check-label" for="flexRadioDefault2-num">6号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3-num"> <label class="form-check-label" for="flexRadioDefault3-num">6.5号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4"> <label class="form-check-label" for="flexRadioDefault4">8号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4-num"> <label class="form-check-label" for="flexRadioDefault4-num">8.5号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault5-num"> <label class="form-check-label" for="flexRadioDefault5-num">10号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault6-num"> <label class="form-check-label" for="flexRadioDefault6-num">13号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault7-num"> <label class="form-check-label" for="flexRadioDefault7-num">16号</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault8-num"> <label class="form-check-label" for="flexRadioDefault8-num">20号</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault9-num"> <label class="form-check-label" for="flexRadioDefault9-num">24号</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault10-num"> <label class="form-check-label" for="flexRadioDefault10-num">50号</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        ECOジョーズ</div>
+      <div class="d-flex flex-wrap border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1-eco"> <label class="form-check-label" for="flexRadioDefault1-eco">あり</label> </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2-eco"> <label class="form-check-label" for="flexRadioDefault2-eco">なし</label> </div>
+      </div>
+    </div>
+    <div class="text-center mt-3"><a class="btn btn-primary ps-4 pe-4 pt-3 pb-3 fs-5" href="#">検索<img src="/images/icon03.png" class="ps-1" alt="検索" width="25"></a></div>
+  </div>
 </body>
 
 </html>
