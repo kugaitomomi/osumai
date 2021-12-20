@@ -1,5 +1,7 @@
 $green : #198754;
 $green2: #53adac;
+$black: #232323;
+$gray: #eae8e8;
 $border-weight: 2px;
 $ps-0: 0;
 $input-btn-color: #5584ac;
@@ -11,7 +13,8 @@ $title-color: #f6f2d4;
 .border-success {
   border-color: $green!important;
 }
-.bg-success {
+.bg-success,
+.table-success {
   background-color: $green2!important;
 }
 .border-bottom {
@@ -26,7 +29,11 @@ $title-color: #f6f2d4;
     background-color: $input-btn-color!important;
     border-color: $input-btn-color!important;
     box-shadow: $box-shadow-sm;
-    // width: 133px;
+}
+.btn-secondary {
+  box-shadow: $box-shadow-sm;
+  background-color: $gray;
+  color: $black;
 }
 .title-color {
   background-color: $title-color;
@@ -46,4 +53,22 @@ a,.nav-link{
 }
 a:hover {
   color: #22577e;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: none;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+    color: var(--bs-table-striped-color);
+}
+
+.table{
+  --bs-table-striped-bg: rgba(235, 250, 250, 1.0);
+}
+
+.page-link {
+  border: none;
+  color: $black;
 }
