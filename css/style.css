@@ -18,7 +18,8 @@ ul {
 .searchArea .border-bottom {
   border-bottom-width: 1px !important;
 }
-.form-control-number {
+.form-control-number,
+.form-control02 {
   width: 26%;
 }
 .up {
@@ -34,4 +35,18 @@ ul {
 .btnArea-csv {
   width: 280px;
   text-align: center;
+}
+.errorArea {
+  box-sizing: border-box;
+  width: 410px;
+  margin: auto;
+}
+.errorArea p {
+  margin: 0 0 5px 0;
+  color: #dc3545;
+}
+
+.attenttion {
+  width: 83%;
+  margin: 0 auto;
 }

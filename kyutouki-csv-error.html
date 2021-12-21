@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="node_module/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrapカスタム用CSS読み込み -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="node_module/bootstarp/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="d-flex flex-wrap py-3 border-bottom border-success">
+    <div class="container d-flex">
+      <h1 class="col"><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      <ul class="subNav d-flex align-items-center">
+        <li class="me-4"><a class="d-block" href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+        <li><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg container ">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
+      <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          給湯器
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="#">編集/削除</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          エアコン
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="#">編集/削除</a></li>
+        </ul>
+      </li>
+  </nav>
+  <div class="container mb-5">
+    <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">給湯器の登録（一括）</h2>
+    <p class="mt-5 text-center">商品を複数登録する場合は、こちらから登録できます。<br>
+    その際に、全商品一括で登録する場合は「CSVアップロード（一括登録）」<br>商品の部分的登録・変更を行う場合は「CSVアップロード（部分登録）」<br>にて登録お願いいたします。</p>
+    <h3 class="fs-5 mt-5 mb-4 text-center">CSVアップロード（一括登録）</h3>
+    <div class="errorArea border border-danger p-2">
+      <p>2行目に未入力項目があります。</p>
+      <p>2プロダクトコード「」が重複しております。</p>
+      <p>2プロダクトコード「」が重複しております。</p>
+      <p>293行目に未入力の項目があります。</p>
+      <p>294行目に未入力の項目があります。</p>
+      <p>295行目に未入力の項目があります。</p>
+      <p>296行目に未入力の項目があります。</p>
+      <p>297行目に未入力の項目があります。</p>
+      <p>298行目に未入力の項目があります。</p>
+      <p>299行目に未入力の項目があります。</p>
+      <p>2100行目に未入力の項目があります。</p>
+    </div>
+    <div class="mt-5 text-center">
+      <a class="btn btn-primary py-2" href="#">戻る</a>
+    </div>
+  </div>
+</body>
+
+</html>
