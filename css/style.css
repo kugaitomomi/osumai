@@ -21,3 +21,9 @@ ul {
 .form-control-number {
   width: 26%;
 }
+.up {
+  margin-bottom: -10px;
+}
+.down {
+  margin-top: -10px;
+}
