@@ -27,3 +27,11 @@ ul {
 .down {
   margin-top: -10px;
 }
+.csvContant {
+  width: 900px;
+  margin: 0 auto;
+}
+.btnArea-csv {
+  width: 280px;
+  text-align: center;
+}
