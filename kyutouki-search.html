@@ -46,16 +46,19 @@
           エアコン
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
-          <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
-          <li><a class="dropdown-item" href="#">編集/削除</a></li>
+          <li><a class="dropdown-item" href="aircon-register.html">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="aircon-csv.html">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="index-aircon.html">編集/削除</a></li>
         </ul>
       </li>
   </nav>
   <div class="container mb-5">
-    <p class="mt-5 text-center">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
-      検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。 </p>
-    <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">新規登録(個別)</a></p>
+<div class="explanArea">
+  <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">給湯器の新規登録（個別）</h2>
+  <p class="mt-5 text-left">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
+    検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。 </p>
+  <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="kyutouki-register.html">新規登録(個別)</a></p>
+</div>
     <div class="d-flex searchArea justify-content-center mb-4">
       <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">フリーワード検索
       </div>
@@ -146,11 +149,11 @@
         class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
         ガスの種類</div>
       <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
+        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
             id="flexRadioDefault1-gas"> <label class="form-check-label" for="flexRadioDefault1-gas">都市ガス</label> </div>
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
+        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
             id="flexRadioDefault2-gas"> <label class="form-check-label" for="flexRadioDefault2-gas">LPG</label> </div>
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
+        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
             id="flexRadioDefault3-gas"> <label class="form-check-label" for="flexRadioDefault3-gas">共通</label> </div>
       </div>
     </div>
@@ -212,7 +215,7 @@
             id="flexRadioDefault7-num"> <label class="form-check-label" for="flexRadioDefault7-num">13号</label> </div>
         <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
             id="flexRadioDefault8-num"> <label class="form-check-label" for="flexRadioDefault8-num">16号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
+        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-size"
             id="flexRadioDefault9-num"> <label class="form-check-label" for="flexRadioDefault9-num">20号</label> </div>
         <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-size"
             id="flexRadioDefault10-num"> <label class="form-check-label" for="flexRadioDefault10-num">24号</label> </div>
@@ -224,9 +227,9 @@
       <div class="d-flex align-items-center bg-success  border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
         ECOジョーズ</div>
       <div class="d-flex flex-wrap border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-name"
+        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-name"
             id="flexRadioDefault1-eco"> <label class="form-check-label" for="flexRadioDefault1-eco">あり</label> </div>
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-name"
+        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-name"
             id="flexRadioDefault2-eco"> <label class="form-check-label" for="flexRadioDefault2-eco">なし</label> </div>
       </div>
     </div>
@@ -312,7 +315,7 @@
           <td>オープン価格<br>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
-          <td><a href="kyutouki-register.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
+          <td><a href="kyutouki-edit.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
         </tr>
         <tr class="align-middle text-center">
           <td class="align-middle" scope="col">
@@ -325,7 +328,7 @@
           <td>オープン価格<br>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
-          <td><a href="kyutouki-register.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
+          <td><a href="kyutouki-edit.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
         </tr>
         <tr class="align-middle text-center">
           <td class="align-middle" scope="col">
@@ -338,7 +341,7 @@
           <td>オープン価格<br>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
-          <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
+          <td><a href="kyutouki-register.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
         </tr>
         <tr class="align-middle text-center">
           <td class="align-middle" scope="col">
