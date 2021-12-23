@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="node_module/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrapカスタム用CSS読み込み -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="node_module/bootstarp/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="d-flex flex-wrap py-3 border-bottom border-success">
+    <div class="container d-flex">
+      <h1 class="col"><a href="index.html"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      <ul class="subNav d-flex align-items-center">
+        <li class="me-4"><a class="d-block" href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+        <li><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg container ">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
+      <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          給湯器
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="kyutouki-register.html">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          エアコン
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="#">編集/削除</a></li>
+        </ul>
+      </li>
+  </nav>
+  <div class="container mb-5">
+    <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">エアコンの新規登録（個別）</h2>
+    <div class="mt-5 explanArea d-flex justify-content-center">
+      <p class="text-left">新しく商品を追加する場合は、下記入力項目をご入力いただき<br>商品を登録することができます。 </p>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        品番 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">CS-X221D-W</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        品名 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">Xシリーズ 【Eolia】ナノイーX搭載ルームエアコン【6畳用】【室内100V】【2021年モデル】</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success d-flex align-items-center  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        メーカー</div>
+      <div
+        class=" border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex flex-wrap align-items-center ">
+       パナソニック
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        設置タイプ</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        壁掛設置
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        年式モデル</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8  d-flex align-items-center"> 2021年式</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        機種タイプ</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">室内機</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        畳数 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+       6畳</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        電源タイプ</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+     室内電源100V</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">電圧テーブル</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">15A</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        冷暖房能力</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+       2.2
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        除湿機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">加湿機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">あり</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">新冷媒R32</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">あり</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">衣類乾燥機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        再燃除湿機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+      あり</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        冷房専用/暖房専用</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        空気清浄機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+      あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        PM2.5対応機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+      除菌機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        脱臭機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        イオン機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">自動熱交換洗浄機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+       あり</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        自動熱交換洗浄機能</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+       あり
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        希望小売価格 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"> 192000円(税込)</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        設定価格 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">82,500円(税込)</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        割引率 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"> 43%</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        販売価格 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"> 82,500円(税込)</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        基本工事費 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"> 25,000円(税込) </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        合計金額 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"> 107,500円(税込) </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2"> 画像登録
+      </div>
+      <div class="border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 col-8 align-items-center">
+        <div class="my-1"><img src="images/pana-ux-in1.jpg" width="300" alt=""></div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-5">
+      <div class="text-center"> <a class="btn btn-secondary pt-3 pb-3 me-4" href="#">キャンセルする</a> </div>
+      <div class="text-center"> <a class="btn btn-primary ps-4 pe-4 pt-3 pb-3" href="kyutouki-confirm.html">確認する</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

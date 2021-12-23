@@ -50,3 +50,12 @@ ul {
   width: 83%;
   margin: 0 auto;
 }
+
+.explanArea {
+    width: 83.33333334%;
+    margin: 0 auto;
+}
+
+.searchrResultArea p{
+  margin: 0;
+}

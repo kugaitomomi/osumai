@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="node_module/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrapカスタム用CSS読み込み -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="node_module/bootstarp/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="d-flex flex-wrap py-3 border-bottom border-success">
+    <div class="container d-flex">
+      <h1 class="col"><a href="index.html"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      <ul class="subNav d-flex align-items-center">
+        <li class="me-4"><a class="d-block" href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+        <li><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg container ">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
+      <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          給湯器
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="kyutouki-register.html">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          エアコン
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="#">編集/削除</a></li>
+        </ul>
+      </li>
+  </nav>
+  <div class="container mb-5">
+    <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">エアコンの新規登録（個別）</h2>
+    <div class="mt-5 explanArea d-flex justify-content-center">
+      <p class="text-left">新しく商品を追加する場合は、下記入力項目をご入力いただき<br>商品を登録することができます。 </p>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        品番 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input class="form-control"
+          type="text" placeholder="品番を入力してください" aria-label="default input example"></div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        品名 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input class="form-control"
+          type="text" placeholder="品名を入力してください" aria-label="default input example"></div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success d-flex align-items-center  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        メーカー</div>
+      <div
+        class=" border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex flex-wrap align-items-center ">
+        <div class="form-check col-2 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault1"> <label class="form-check-label" for="flexRadioDefault1">ダイキン</label> </div>
+        <div class="form-check col-2 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">ヒタチ</label> </div>
+        <div class="form-check col-2 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault3"> <label class="form-check-label" for="flexRadioDefault3">フジツウ</label> </div>
+        <div class="form-check col-2 me-4 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault4"> <label class="form-check-label" for="flexRadioDefault4">パナソニック</label> </div>
+        <div class="form-check col-2 me-2 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault5"> <label class="form-check-label" for="flexRadioDefault5">シャープ</label> </div>
+        <div class="form-check col-2 me-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault6"> <label class="form-check-label" for="flexRadioDefault6">トウシバ</label> </div>
+        <div class="form-check col-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault7"> <label class="form-check-label" for="flexRadioDefault7">ミツビシ</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        設置タイプ</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault1-kinds"> <label class="form-check-label" for="flexRadioDefault1-kinds">壁掛設置</label>
+        </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault2-kinds"> <label class="form-check-label" for="flexRadioDefault2-kinds">窓枠設置</label>
+        </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault3-kinds"> <label class="form-check-label" for="flexRadioDefault3-kinds">据置設置</label>
+        </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault4-kinds"> <label class="form-check-label"
+            for="flexRadioDefault4-kinds">高温水供給型給湯器</label> </div>
+        <div class="form-check col-3 "> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault5-kinds"> <label class="form-check-label" for="flexRadioDefault5-kinds">天井埋込型</label>
+        </div>
+        <div class="form-check col-3 "> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault6-kinds"> <label class="form-check-label" for="flexRadioDefault6-kinds">壁埋込型</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        年式モデル</div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8  d-flex align-items-center"> <input
+          class="form-control form-control-number me-2" type="text" placeholder="年式モデルを入力してください"
+          aria-label="default input example"></div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        機種タイプ</div>
+      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault7-place"> <label class="form-check-label" for="flexRadioDefault7-place">室内外機セット</label>
+        </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault8-place"> <label class="form-check-label" for="flexRadioDefault8-place">室内機</label>
+        </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault9-place"> <label class="form-check-label" for="flexRadioDefault9-place">室外機</label>
+        </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault10-place"> <label class="form-check-label"
+            for="flexRadioDefault10-place">マルチ用室内機</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault11-place"> <label class="form-check-label"
+            for="flexRadioDefault11-place">マルチ用室外機</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        畳数 </div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault12-num"> <label class="form-check-label" for="flexRadioDefault12-num">6畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault13-num"> <label class="form-check-label" for="flexRadioDefault13-num">8畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault14-num"> <label class="form-check-label" for="flexRadioDefault14-num">10畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault15"> <label class="form-check-label" for="flexRadioDefault15">12畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault16-num"> <label class="form-check-label" for="flexRadioDefault16-num">14畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault17-num"> <label class="form-check-label" for="flexRadioDefault17-num">16畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault18-num"> <label class="form-check-label" for="flexRadioDefault18-num">18畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault19-num"> <label class="form-check-label" for="flexRadioDefault19-num">20畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault20-num"> <label class="form-check-label" for="flexRadioDefault20-num">23畳</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault21-num"> <label class="form-check-label" for="flexRadioDefault21-num">26畳</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault22-num"> <label class="form-check-label" for="flexRadioDefault22-num">29畳</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        電源タイプ</div>
+      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="powerSupply"
+            id="powerSupply1"> <label class="form-check-label" for="powerSupply1">室内電源100V</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="powerSupply"
+            id="powerSupply2"> <label class="form-check-label" for="powerSupply2">室内電源200V</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="powerSupply"
+            id="powerSupply3"> <label class="form-check-label" for="powerSupply3">室外電源100V</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="powerSupply"
+            id="powerSupply4"> <label class="form-check-label" for="powerSupply4">室外電源200V</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        電圧テーブル</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="
+voltage" id="voltage1"> <label class="form-check-label" for="voltage1">15A</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="voltage" id="voltage2"> <label
+            class="form-check-label" for="voltage2">20A</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        冷暖房能力</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning1"> <label class="form-check-label" for="airconditioning1">2.2</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning2"> <label class="form-check-label" for="airconditioning2">2.5</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning3"> <label class="form-check-label" for="airconditioning3">2.8</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning4"> <label class="form-check-label" for="airconditioning4">3.6</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning5"> <label class="form-check-label" for="airconditioning5">4.0</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning6"> <label class="form-check-label" for="airconditioning6">5.6</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning7"> <label class="form-check-label" for="airconditioning7">7.1</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning8"> <label class="form-check-label" for="airconditioning8">8.0</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="airconditioning"
+            id="airconditioning9"> <label class="form-check-label" for="airconditioning9">9.0</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        除湿機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="dehumidification"
+            id="dehumidification1"> <label class="form-check-label" for="dehumidification1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="dehumidification"
+            id="dehumidification2"> <label class="form-check-label" for="dehumidification2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        加湿機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="humidification"
+            id="humidification1"> <label class="form-check-label" for="humidification1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="humidification"
+            id="humidification2"> <label class="form-check-label" for="humidification2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        新冷媒R32</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="refrigerant" id="refrigerant1">
+          <label class="form-check-label" for="refrigerant1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="refrigerant" id="refrigerant2">
+          <label class="form-check-label" for="refrigerant2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        衣類乾燥機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="drying" id="drying1"> <label
+            class="form-check-label" for="drying1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="drying" id="drying2"> <label
+            class="form-check-label" for="drying2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        再燃除湿機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="rekindling"
+            id="rekindling1"><label class="form-check-label" for="rekindling1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="rekindling" id="rekindling2"><label
+            class="form-check-label" for="rekindling2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        冷房専用/暖房専用</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="cool-warm"
+            id="cool-warm1"><label class="form-check-label" for="cool-warm1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="cool-warm" id="cool-warm2"><label
+            class="form-check-label" for="cool-warm2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        空気清浄機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="airpurifier"
+            id="airpurifier1"><label class="form-check-label" for="airpurifier1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="airpurifier"
+            id="airpurifier2"><label class="form-check-label" for="airpurifier2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        PM2.5対応機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="pm"
+            id="pm1"><label class="form-check-label" for="pm1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="pm"
+            id="pm2"><label class="form-check-label" for="pm2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+      除菌機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="removbacteria" id="removbacteria1"><label
+            class="form-check-label" for="removbacteria1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="removbacteria" id="removbacteria2"><label
+            class="form-check-label" for="removbacteria2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        脱臭機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="deodorizing"
+            id="deodorizing1"><label class="form-check-label" for="deodorizing1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="deodorizing"
+            id="deodorizing2"><label class="form-check-label" for="deodorizing2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        イオン機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="ion"
+            id="ion1"><label class="form-check-label" for="ion1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="ion" id="ion2"><label
+            class="form-check-label" for="ion2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">自動熱交換洗浄機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="exchange" id="exchange1"><label
+            class="form-check-label" for="exchange1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="exchange" id="exchange2"><label
+            class="form-check-label" for="exchange2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        自動熱交換洗浄機能</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 pe-2 col-8">
+        <div class="form-check me-5"> <input class="form-check-input" type="radio" name="internaldry" id="internaldry1"><label
+            class="form-check-label" for="internaldry1">あり</label> </div>
+        <div class="form-check"> <input class="form-check-input" type="radio" name="internaldry" id="internaldry2"><label
+            class="form-check-label" for="internaldry2">なし</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        希望小売価格 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center"> <input
+          class="form-control form-control-number me-2" type="number" placeholder="123400"
+          aria-label="default input example">円(税込)</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        設定価格 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center"><input
+          class="form-control form-control-number me-2" type="number" placeholder="123400"
+          aria-label="default input example">円(税込)</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        割引率 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center"> <input
+          class="form-control form-control-number me-2" type="number" placeholder="74"
+          aria-label="default input example">%</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        販売価格 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center"> <input
+          class="form-control form-control-number me-2" type="number" placeholder="123400"
+          aria-label="default input example">円(税込)</div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        基本工事費 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center"> <input
+          class="form-control form-control-number me-2" type="number" placeholder="123400"
+          aria-label="default input example">円(税込) </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        合計金額 </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center"> <input
+          class="form-control form-control-number me-2" type="number" placeholder="123400"
+          aria-label="default input example">円(税込) </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2"> 画像登録
+      </div>
+      <div class="border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 col-8 align-items-center">
+        <div class="my-1"><a href="" class="btn btn-secondary">画像を選択してください</a> </div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center mt-5">
+      <div class="text-center"> <a class="btn btn-secondary pt-3 pb-3 me-4" href="#">キャンセルする</a> </div>
+      <div class="text-center"> <a class="btn btn-primary ps-4 pe-4 pt-3 pb-3" href="kyutouki-confirm.html">確認する</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

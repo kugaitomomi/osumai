@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Sample</title>
+  <!-- BootstrapのCSS読み込み -->
+  <link href="node_module/bootstarp/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrapカスタム用CSS読み込み -->
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!-- jQuery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- BootstrapのJS読み込み -->
+  <script src="node_module/bootstarp/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <header class="d-flex flex-wrap py-3 border-bottom border-success">
+    <div class="container d-flex">
+      <h1 class="col"><a href="index.html"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      <ul class="subNav d-flex align-items-center">
+        <li class="col me-4"><a href="acount-confirm.html"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+        <li class="col"><a href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+      </ul>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg container ">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="index.html">ホーム</a> </li>
+      <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+          role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          給湯器
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="kyutouki-register.html">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          エアコン
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
+          <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
+          <li><a class="dropdown-item" href="#">編集/削除</a></li>
+        </ul>
+      </li>
+  </nav>
+  <div class="container mb-5">
+    <div class="explanArea">
+      <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">エアコンの編集/削除</h2>
+      <p class="mt-5 text-left">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
+        検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。 </p>
+      <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="kyutouki-register.html">新規登録(個別)</a>
+      </p>
+    </div>
+    <div class="d-flex searchArea justify-content-center mb-4">
+      <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">フリーワード検索
+      </div>
+      <div class="border-bottom border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input
+          class="form-control" type="text" placeholder="キーワードを入力してください" aria-label="default input example"></div>
+    </div>
+    <p class="fs-5 fw-bold text-center mb-4">または絞り込み検索</p>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="bg-success d-flex align-items-center  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        メーカー</div>
+      <div class=" border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex flex-wrap">
+        <div class="form-check col-2 mb-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault1"> <label class="form-check-label" for="flexRadioDefault1">ダイキン</label> </div>
+        <div class="form-check col-2 mb-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault2"> <label class="form-check-label" for="flexRadioDefault2">ヒタチ</label> </div>
+        <div class="form-check col-2 mb-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault3"> <label class="form-check-label" for="flexRadioDefault3">フジツウ</label> </div>
+        <div class="form-check col-2 mb-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault4"> <label class="form-check-label" for="flexRadioDefault4">パナソニック</label> </div>
+        <div class="form-check col-2 mb-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault5"> <label class="form-check-label" for="flexRadioDefault5">シャープ</label> </div>
+        <div class="form-check col-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault6"> <label class="form-check-label" for="flexRadioDefault6">トウシバ</label> </div>
+        <div class="form-check col-2"> <input class="form-check-input" type="radio" name="aircon_maker"
+            id="flexRadioDefault7"> <label class="form-check-label" for="flexRadioDefault7">ミツビシ</label> </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        設置タイプ</div>
+      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault1-kinds"> <label class="form-check-label" for="flexRadioDefault1-kinds">壁掛設置</label>
+        </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault2-kinds"> <label class="form-check-label" for="flexRadioDefault2-kinds">窓枠設置</label>
+        </div>
+        <div class="form-check col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault3-kinds"> <label class="form-check-label" for="flexRadioDefault3-kinds">据置設置</label>
+        </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault4-kinds"> <label class="form-check-label"
+            for="flexRadioDefault4-kinds">高温水供給型給湯器</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault5-kinds"> <label class="form-check-label" for="flexRadioDefault5-kinds">天井埋込型</label>
+        </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="aircontype"
+            id="flexRadioDefault6-kinds"> <label class="form-check-label" for="flexRadioDefault6-kinds">壁埋込型</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        機種タイプ</div>
+      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault7-place"> <label class="form-check-label" for="flexRadioDefault7-place">室内外機セット</label>
+        </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault8-place"> <label class="form-check-label" for="flexRadioDefault8-place">室内機</label>
+        </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault9-place"> <label class="form-check-label" for="flexRadioDefault9-place">室外機</label>
+        </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault10-place"> <label class="form-check-label" for="flexRadioDefault10-place">マルチ用室内機</label>
+        </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="flexRadioDefault"
+            id="flexRadioDefault11-place"> <label class="form-check-label" for="flexRadioDefault11-place">マルチ用室外機</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div class="d-flex align-items-center bg-success  border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">畳数
+      </div>
+      <div class="d-flex flex-wrap border-top border-end border-bottom border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault12-num"> <label class="form-check-label" for="flexRadioDefault12-num">6畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault13-num"> <label class="form-check-label" for="flexRadioDefault13-num">8畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault14-num"> <label class="form-check-label" for="flexRadioDefault14-num">10畳</label> </div>
+      <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault15"> <label class="form-check-label" for="flexRadioDefault15">12畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault16-num"> <label class="form-check-label" for="flexRadioDefault16-num">14畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault17-num"> <label class="form-check-label" for="flexRadioDefault17-num">16畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault18-num"> <label class="form-check-label" for="flexRadioDefault18-num">18畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault19-num"> <label class="form-check-label" for="flexRadioDefault19-num">20畳</label> </div>
+        <div class="form-check col-3 mb-2"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault20-num"> <label class="form-check-label" for="flexRadioDefault20-num">23畳</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault21-num"> <label class="form-check-label" for="flexRadioDefault21-num">26畳</label> </div>
+        <div class="form-check col-3"> <input class="form-check-input" type="radio" name="aircon_size"
+            id="flexRadioDefault22-num"> <label class="form-check-label" for="flexRadioDefault22-num">29畳</label> </div>
+      </div>
+    </div>
+    <div class="text-center mt-3"><a class="btn btn-primary ps-4 pe-4 pt-3 pb-3 fs-5" href="kyutouki-search.html">検索<img
+          src="images/icon03.png" class="ps-1" alt="検索" width="25"></a></div>
+  </div>
+</body>
+
+</html>

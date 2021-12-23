@@ -20,17 +20,17 @@
 <body>
   <header class="d-flex flex-wrap py-3 border-bottom border-success">
     <div class="container d-flex">
-      <h1 class="col"><a href="#"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
+      <h1 class="col"><a href="index.html"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
       <ul class="subNav d-flex align-items-center">
-        <li class="me-4"><a class="d-block" href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
-        <li><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+          <li class="col me-4"><a href="acount-confirm.html"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+          <li class="col"><a href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
       </ul>
     </div>
   </header>
 <nav class="navbar navbar-expand-lg container ">
 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 <li class="nav-item border-end">
-  <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+  <a class="nav-link active" aria-current="page" href="index.html">ホーム</a>
 </li>
 <li class="nav-item dropdown border-end">
   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
@@ -38,9 +38,9 @@
   給湯器
   </a>
   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <li><a class="dropdown-item" href="#">商品を個別登録する</a></li>
-    <li><a class="dropdown-item" href="#">商品を一括登録する</a></li>
-    <li><a class="dropdown-item" href="#">編集/削除</a></li>
+    <li><a class="dropdown-item" href="kyutouki-register.html">商品を個別登録する</a></li>
+    <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
+    <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
   </ul>
 </li>
 <li class="nav-item dropdown">
@@ -57,9 +57,12 @@
 </nav>
 
   <div class="container mb-5">
-    <p class="mt-5 text-center">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
+    <div class="explanArea">
+    <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">給湯器の新規登録（個別）</h2>
+    <p class="mt-5 text-left">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
       検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。 </p>
-    <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="#">新規登録(個別)</a></p>
+    <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="kyutouki-register.html">新規登録(個別)</a></p>
+    </div>
     <div class="d-flex searchArea justify-content-center mb-4">
       <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">フリーワード検索
       </div>
@@ -211,7 +214,7 @@
             id="flexRadioDefault2-eco"> <label class="form-check-label" for="flexRadioDefault2-eco">なし</label> </div>
       </div>
     </div>
-    <div class="text-center mt-3"><a class="btn btn-primary ps-4 pe-4 pt-3 pb-3 fs-5" href="#">検索<img src="images/icon03.png" class="ps-1" alt="検索" width="25"></a></div>
+    <div class="text-center mt-3"><a class="btn btn-primary ps-4 pe-4 pt-3 pb-3 fs-5" href="kyutouki-search.html">検索<img src="images/icon03.png" class="ps-1" alt="検索" width="25"></a></div>
   </div>
 </body>
 
