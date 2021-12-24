@@ -22,8 +22,8 @@
     <div class="container d-flex">
       <h1 class="col"><a href="index.html"><img src="images/logo.png" alt="住設まるっとシフト 給湯器からエアコン、コンロまでアイテム勢揃い"></a></h1>
       <ul class="subNav d-flex align-items-center">
-        <li class="me-4"><a class="d-block" href="#"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
-        <li><a class="d-block" href="#"><img src="images/icon02.png" alt="ログアウト"></a></li>
+        <li class="me-4"><a class="d-block" href="acount-users.html"><img src="images/icon01.png" alt="ユーザー情報"></a></li>
+        <li><a class="d-block" href="login.html"><img src="images/icon02.png" alt="ログアウト"></a></li>
       </ul>
     </div>
   </header>
@@ -461,19 +461,22 @@
   </tr>
   </tbody>
   </table>
-  <nav aria-label="Page navigation">
-    <ul class="pagination justify-content-center">
-      <li class="page-item fs-5"> <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a> </li>
-      <li class="page-item fs-5"><a class="page-link" href="#">1</a></li>
-      <li class="page-item fs-5"><a class="page-link" href="#">2</a></li>
-      <li class="page-item fs-5"><a class="page-link" href="#">3</a></li>
-      <li class="page-item fs-5"> <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a> </li>
-    </ul>
-  </nav>
+      <div class="pager justify-content-center align-items-center">
+        <div class="dataTables_paginate paging_simple_numbers" id="tableData_paginate">
+          <a class="paginate_button previous disabled" aria-controls="tableData" data-dt-idx="0" tabindex="-1"
+            id="tableData_previous">
+            <i class="ri-arrow-left-line">&laquo;</i>
+          </a>
+          <span>
+            <a class="paginate_button current" aria-controls="tableData" data-dt-idx="1" tabindex="0">1</a>
+            <a class="paginate_button " aria-controls="tableData" data-dt-idx="2" tabindex="0">2</a>
+            <a class="paginate_button " aria-controls="tableData" data-dt-idx="3" tabindex="0">3</a>
+          </span>
+          <a class="paginate_button next" aria-controls="tableData" data-dt-idx="4" tabindex="0" id="tableData_next">
+            <i class="ri-arrow-right-line">&raquo;</i>
+          </a>
+        </div>
+      </div>
   </div>
   <!-- 検索結果 end -->
 </body>

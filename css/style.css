@@ -6,7 +6,8 @@ ul {
   margin: 0;
   padding: 0;
 }
-.btn,.subNav li a:hover {
+.btn,.subNav li a:hover,
+.pager a {
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
     -o-transition: all 0.6s ease;
@@ -58,4 +59,20 @@ ul {
 
 .searchrResultArea p{
   margin: 0;
+}
+
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.pager a{
+  padding: 0.5rem;
+  vertical-align: middle;
+}
+.pager a:hover{
+  cursor: pointer;
+  color: #22577e;
+  background-color: #dee2e6;
 }
