@@ -28,28 +28,30 @@
     </div>
   </header>
   <nav class="navbar navbar-expand-lg container ">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
-      <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-          role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          給湯器
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="kyutouki-register.html">商品を個別登録する</a></li>
-          <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
-          <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
+          <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              給湯器
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="kyutouki-register.html">本体を個別登録する</a></li>
+              <li><a class="dropdown-item" href="kyutouki-contoroller-register.html">リモコンを個別登録する</a></li>
+              <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
+              <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              エアコン
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="aircon-register.html">商品を個別登録する</a></li>
+              <li><a class="dropdown-item" href="aircon-csv.html">商品を一括登録する</a></li>
+              <li><a class="dropdown-item" href="index-aircon.html">編集/削除</a></li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          エアコン
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="aircon-register.html">商品を個別登録する</a></li>
-          <li><a class="dropdown-item" href="aircon-csv.html">商品を一括登録する</a></li>
-          <li><a class="dropdown-item" href="index-aircon.html">編集/削除</a></li>
-        </ul>
-      </li>
   </nav>
   <div class="container mb-5">
     <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">エアコンの新規登録（個別）</h2>
@@ -419,7 +421,9 @@ voltage" id="voltage1" checked> <label class="form-check-label" for="voltage1">1
       <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2"> 画像登録
       </div>
       <div class="border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 col-8">
-        <div class="my-1"><img src="images/pana-ux-in1.jpg" width="250" class="mb3" alt=""><br><a href="" class="btn btn-secondary">画像を選択してください</a> </div>
+        <div class="my-1"><img src="images/pana-ux-in1.jpg" width="250" class="mb3" alt=""><br><a href="" class="btn btn-secondary">画像を選択してください</a>
+          <label><input type="checkbox" class="ms-3 me-2" name="del_img" value="1">削除</label>
+        </div>
       </div>
     </div>
     <div class="d-flex align-items-center justify-content-center mt-5">

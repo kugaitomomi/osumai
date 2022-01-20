@@ -28,31 +28,33 @@
     </div>
   </header>
   <nav class="navbar navbar-expand-lg container ">
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
-      <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-          role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          給湯器
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <li><a class="dropdown-item" href="kyutouki-register.html">商品を個別登録する</a></li>
-    <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
-    <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-          data-bs-toggle="dropdown" aria-expanded="false">
-          エアコン
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="aircon-register.html">商品を個別登録する</a></li>
-          <li><a class="dropdown-item" href="aircon-csv.html">商品を一括登録する</a></li>
-          <li><a class="dropdown-item" href="index-aircon.html">編集/削除</a></li>
-        </ul>
-      </li>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item border-end"> <a class="nav-link active" aria-current="page" href="#">ホーム</a> </li>
+        <li class="nav-item dropdown border-end"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            給湯器
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="kyutouki-register.html">本体を個別登録する</a></li>
+            <li><a class="dropdown-item" href="kyutouki-contoroller-register.html">リモコンを個別登録する</a></li>
+            <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
+            <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            エアコン
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="aircon-register.html">商品を個別登録する</a></li>
+            <li><a class="dropdown-item" href="aircon-csv.html">商品を一括登録する</a></li>
+            <li><a class="dropdown-item" href="index-aircon.html">編集/削除</a></li>
+          </ul>
+        </li>
+      </ul>
   </nav>
   <div class="container mb-5">
-    <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">給湯器の新規登録（個別）</h2>
+    <h2 class="fs-4 fw-bold mt-5 mb-4_5 pt-3 pb-3 ps-4 title-color text-center">給湯器の登録内容編集</h2>
     <div class="mt-5 explanArea d-flex"><p class="text-start">新しく商品を追加する場合は、下記入力項目をご入力いただき<br>商品を登録することができます。 </p></div>
     <div class="d-flex searchArea justify-content-center">
       <div
@@ -67,6 +69,14 @@
         品名 </div>
       <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input class="form-control"
           type="text" placeholder="RHBH-RJ246AW2-1/RTU-R1601" value="RHBH-RJ246AW2-1/RTU-R1601" aria-label="default input example"></div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        シリーズ </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input class="form-control" type="text"
+          placeholder="GT" value="GT" aria-label="default input example">
+      </div>
     </div>
     <div class="d-flex searchArea justify-content-center">
       <div
@@ -297,16 +307,41 @@
     <div class="d-flex searchArea justify-content-center">
       <div
         class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
+        標準リモコン </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <select class="form-select" id="inputGroupSelect01">
+          <option >リモコンを選択してください</option>
+          <option value="1" selected>リモコン1</option>
+          <option value="2">リモコン2</option>
+          <option value="3">リモコン3</option>
+        </select>
+      </div>
+    </div>
+    <div class="d-flex searchArea justify-content-center">
+      <div
+        class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
         リモコン品番01 </div>
-      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"><input class="form-control"
-          type="text" placeholder="BCW-170" value="BCW-170" aria-label="default input example"></div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+        <select class="form-select" id="inputGroupSelect01">
+          <option selected>リモコンを選択してください</option>
+          <option value="1">リモコン1</option>
+          <option value="2">リモコン2</option>
+          <option value="3">リモコン3</option>
+        </select>
+      </div>
     </div>
     <div class="d-flex searchArea justify-content-center">
       <div
         class="d-flex align-items-center bg-success border-start border-top boeder-start border-end border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
         リモコン品番02 </div>
-      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8"> <input class="form-control"
-          type="text" placeholder="リモコン品番を入力してください" aria-label="default input example"> </div>
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
+              <select class="form-select" id="inputGroupSelect01">
+                <option selected>リモコンを選択してください</option>
+                <option value="1">リモコン1</option>
+                <option value="2">リモコン2</option>
+                <option value="3">リモコン3</option>
+              </select>
+             </div>
     </div>
     <div class="d-flex searchArea justify-content-center">
       <div
@@ -341,9 +376,9 @@
       <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2"> 画像登録
       </div>
       <div class="border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 col-8 ">
-        <div class="d-inline-block text-center ms-5 me-5 mb-1">本体<br><img src="images/photo01.png" alt=""><br> <a href=""
+        <div class="d-inline-block text-center ms-5 me-5 mb-1">画像1<br><img src="images/photo01.png" alt=""><br> <a href=""
             class="btn btn-secondary mt-2">画像を選択してください</a> </div>
-        <div class="d-inline-block text-center mb-1">リモコン本体<br><img src="images/photo02.png" alt=""><br><a href="" class="btn btn-secondary mt-2">画像を選択してください</a>
+        <div class="d-inline-block text-center mb-1">画像2<br><img src="images/photo02.png" alt=""><br><a href="" class="btn btn-secondary mt-2">画像を選択してください</a>
         </div>
       </div>
     </div>

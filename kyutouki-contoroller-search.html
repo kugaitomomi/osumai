@@ -37,9 +37,10 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="kyutouki-register.html">本体を個別登録する</a></li>
-            <li><a class="dropdown-item" href="kyutouki-contoroller-register.html">リモコンを個別登録する</a></li>
             <li><a class="dropdown-item" href="kyutouki-csv.html">商品を一括登録する</a></li>
             <li><a class="dropdown-item" href="index-kyutouki.html">編集/削除</a></li>
+            <li><a class="dropdown-item" href="kyutouki-contoroller-register.html">リモコンを個別登録する</a></li>
+
           </ul>
         </li>
         <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -59,7 +60,7 @@
 <div class="explanArea">
   <p class="mt-5 text-left">キーワードによる検索を行いたい方は「フリーワード検索」。<br> 条件による絞り込みを行いたい方は「絞り込み検索」をお使いください。<br>
     検索の際は、フリーワードもしくは絞り込み検索のどちらかをお使いください。 </p>
-  <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="kyutouki-register.html">新規登録(個別)</a></p>
+  <p class="text-end pb-2"><a class="btn btn-primary ps-4 pe-4 pt-2 pb-2" href="kyutouki-contoroller-register.html">新規登録(個別)</a></p>
 </div>
     <div class="d-flex searchArea justify-content-center mb-4">
       <div class="d-flex align-items-center bg-success border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">フリーワード検索
@@ -72,7 +73,7 @@
       <div
         class="bg-success d-flex align-items-center  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
         メーカー</div>
-      <div class=" border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center ">
+      <div class="border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center">
         <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-maker"
             id="flexRadioDefault1"> <label class="form-check-label" for="flexRadioDefault1">リンナイ</label> </div>
         <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-maker"
@@ -83,158 +84,24 @@
             id="flexRadioDefault4"> <label class="form-check-label" for="flexRadioDefault4">パロマ</label> </div>
       </div>
     </div>
+
+
     <div class="d-flex searchArea justify-content-center">
       <div
-        class="d-flex align-items-center bg-success border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
-        給湯器の種別</div>
-      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-kinds" id="flexRadioDefault1-kinds"> <label class="form-check-label" for="flexRadioDefault1-kinds">ガス給湯器</label>
-        </div>
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-kinds" id="flexRadioDefault2-kinds"> <label class="form-check-label" for="flexRadioDefault2-kinds">ガス給湯専用機</label>
-        </div>
-        <div class="col-3 me-2 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-kinds"
-            id="flexRadioDefault3-kinds"> <label class="form-check-label"
-            for="flexRadioDefault3-kinds">ガス給湯暖房用熱源機</label> </div>
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-kinds"
-            id="flexRadioDefault4-kinds"> <label class="form-check-label"
-            for="flexRadioDefault4-kinds">高温水供給型給湯器</label> </div>
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-kinds"
-            id="flexRadioDefault5-kinds"> <label class="form-check-label" for="flexRadioDefault5-kinds">バランス釜</label>
-        </div>
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-kinds"
-            id="flexRadioDefault6-kinds"> <label class="form-check-label" for="flexRadioDefault6-kinds">瞬間湯沸かし器</label>
-        </div>
+        class="d-flex align-items-center bg-success  border-top border-bottom border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">リモコン種別</div>
+      <div class="border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8 d-flex align-items-center">
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="contoroller"
+            id="flexRadioDefaul-remote01"> <label class="form-check-label" for="flexRadioDefaul-remote01">台所/浴室</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="contorollers"
+            id="flexRadioDefaul-remote02"> <label class="form-check-label" for="flexRadioDefaul-remote02">台所</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="contoroller"
+            id="flexRadioDefaul-remote03"> <label class="form-check-label" for="flexRadioDefaul-remote03">浴室</label> </div>
+        <div class="form-check col-3 me-2"> <input class="form-check-input" type="radio" name="contoroller" id="flexRadioDefaul-remote04">
+              <label class="form-check-label" for="flexRadioDefaul-remote04">増設</label> </div>
       </div>
     </div>
-    <div class="d-flex searchArea justify-content-center">
-      <div
-        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
-        設置場所</div>
-      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault1-place"> <label class="form-check-label" for="flexRadioDefault1-place">屋外設置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault2-place"> <label class="form-check-label" for="flexRadioDefault2-place">屋内設置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault3-place"> <label class="form-check-label" for="flexRadioDefault3-place">PS扉内設置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault4-place"> <label class="form-check-label" for="flexRadioDefault4-place">PS標準設置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault5-place"> <label class="form-check-label" for="flexRadioDefault5-place">室内設置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault6-place"> <label class="form-check-label" for="flexRadioDefault6-place">屋外据置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault7-place"> <label class="form-check-label" for="flexRadioDefault7-place">屋内据置</label>
-        </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault8-place"> <label class="form-check-label" for="flexRadioDefault8-place">壁貫通設置</label>
-        </div>
-        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault9-place"> <label class="form-check-label" for="flexRadioDefault9-place">浴槽隣接設置</label>
-        </div>
-        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault10-place"> <label class="form-check-label"
-            for="flexRadioDefault10-place">チャンバー設置</label> </div>
-        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-place"
-            id="flexRadioDefault11-place"> <label class="form-check-label" for="flexRadioDefault11-place">壁埋込型</label>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex searchArea justify-content-center">
-      <div
-        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
-        ガスの種類</div>
-      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
-            id="flexRadioDefault1-gas"> <label class="form-check-label" for="flexRadioDefault1-gas">都市ガス</label> </div>
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
-            id="flexRadioDefault2-gas"> <label class="form-check-label" for="flexRadioDefault2-gas">LPG</label> </div>
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-gas"
-            id="flexRadioDefault3-gas"> <label class="form-check-label" for="flexRadioDefault3-gas">共通</label> </div>
-      </div>
-    </div>
-    <div class="d-flex searchArea justify-content-center">
-      <div
-        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
-        排気タイプ</div>
-      <div class="d-flex align-items-center flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault1-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault1-exhaust">前排気【前排気延長型】</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault2-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault2-exhaust">アルコーブ設置型</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault3-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault3-exhaust">上方排気【上方延長排気】</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault4-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault4-exhaust">後方排気【後方延長排気】</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault5-exhaust"> <label class="form-check-label" for="flexRadioDefault5-exhaust">室内設置</label>
-        </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault6-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault6-exhaust">給排気延長型</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault7-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault7-exhaust">丸排気型【延長丸排気】</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault8-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault8-exhaust">排気フード</label> </div>
-        <div class="col-4 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault9-exhaust"> <label class="form-check-label" for="flexRadioDefault9-exhaust">室内開放</label>
-        </div>
-        <div class="col-4"> <input class="form-check-input" type="radio" name="kyutouki-exhaust"
-            id="flexRadioDefault10-exhaust"> <label class="form-check-label"
-            for="flexRadioDefault10-exhaust">屋外排気</label> </div>
-      </div>
-    </div>
-    <div class="d-flex searchArea justify-content-center">
-      <div
-        class="d-flex align-items-center bg-success  border-top border-end border-start border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
-        号数</div>
-      <div class="d-flex flex-wrap border-top border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault1-num"> <label class="form-check-label" for="flexRadioDefault1-num">5号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault2-num"> <label class="form-check-label" for="flexRadioDefault2-num">6号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault3-num"> <label class="form-check-label" for="flexRadioDefault3-num">6.5号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault4-num"> <label class="form-check-label" for="flexRadioDefault4-num">8号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault5-num"> <label class="form-check-label" for="flexRadioDefault5-num">8.5号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault6-num"> <label class="form-check-label" for="flexRadioDefault6-num">10号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault7-num"> <label class="form-check-label" for="flexRadioDefault7-num">13号</label> </div>
-        <div class="col-3 mb-2"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault8-num"> <label class="form-check-label" for="flexRadioDefault8-num">16号</label> </div>
-        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault9-num"> <label class="form-check-label" for="flexRadioDefault9-num">20号</label> </div>
-        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault10-num"> <label class="form-check-label" for="flexRadioDefault10-num">24号</label> </div>
-        <div class="col-3"> <input class="form-check-input" type="radio" name="kyutouki-size"
-            id="flexRadioDefault11-num"> <label class="form-check-label" for="flexRadioDefault11-num">50号</label> </div>
-      </div>
-    </div>
-    <div class="d-flex searchArea justify-content-center">
-      <div class="d-flex align-items-center bg-success  border border-dark pt-2 pb-2 ps-2 pe-2 text-white col-2">
-        ECOジョーズ</div>
-      <div class="d-flex flex-wrap border-top border-bottom border-end border-dark pt-2 pb-2 ps-2 ps-2 pe-2 col-8">
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-name"
-            id="flexRadioDefault1-eco"> <label class="form-check-label" for="flexRadioDefault1-eco">あり</label> </div>
-        <div class="col-3 me-2"> <input class="form-check-input" type="radio" name="kyutouki-name"
-            id="flexRadioDefault2-eco"> <label class="form-check-label" for="flexRadioDefault2-eco">なし</label> </div>
-      </div>
-    </div>
+
+
     <div class="text-center mt-3"><a class="btn btn-primary ps-4 pe-4 pt-3 pb-3 fs-5" href="#">検索<img
           src="images/icon03.png" class="ps-1" alt="検索" width="25"></a></div>
   </div>
@@ -276,7 +143,7 @@
           <th class="table-success text-white" scope="col">メーカー</th>
           <th class="table-success text-white" scope="col">品番</th>
           <th class="table-success text-white∫" scope="col">
-            <div class="d-flex justify-content-center align-items-center text-white">セット希望小売価格<br>設定金額
+            <div class="d-flex justify-content-center align-items-center text-white">セット希望小売価格
                         <div class="ms-1">
                           <img src="images/icon-up.png" class="up" alt="昇順">
                           <br>
@@ -314,10 +181,10 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
-          <td><a href="kyutouki-edit.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
+          <td><a href="kyutouki-contoroller-edit.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-contoroller-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
         </tr>
         <tr class="align-middle text-center">
           <td class="align-middle" scope="col">
@@ -327,10 +194,10 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
-          <td><a href="kyutouki-edit.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
+          <td><a href="kyutouki-contoroller-edit.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-contoroller-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
         </tr>
         <tr class="align-middle text-center">
           <td class="align-middle" scope="col">
@@ -340,10 +207,10 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
-          <td><a href="kyutouki-register.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
+          <td><a href="kyutouki-register.html" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="kyutouki-contoroller-delete.html" class="mb-2 btn btn-secondary">削除</a></td>
         </tr>
         <tr class="align-middle text-center">
           <td class="align-middle" scope="col">
@@ -353,7 +220,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -366,7 +233,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -379,7 +246,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -392,7 +259,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -405,7 +272,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -418,7 +285,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -431,7 +298,7 @@
           <td>2021<br>12/14</td>
           <td>パナソニック</td>
           <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-          <td>オープン価格<br>82,104円</td>
+          <td>82,104円</td>
           <td>76%</td>
           <td>82,104円</td>
           <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -444,7 +311,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -457,7 +324,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -470,7 +337,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -483,7 +350,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -496,7 +363,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -509,7 +376,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -522,7 +389,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -535,7 +402,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -548,7 +415,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
@@ -561,7 +428,7 @@
                   <td>2021<br>12/14</td>
                   <td>パナソニック</td>
                   <td>GT-C2062SAWX-2<br>BL+RC-J101E</td>
-                  <td>オープン価格<br>82,104円</td>
+                  <td>82,104円</td>
                   <td>76%</td>
                   <td>82,104円</td>
                   <td><a href="#" class="btn btn-primary mt-2 mb-3">編集</a><br><a href="#" class="mb-2 btn btn-secondary">削除</a></td>
